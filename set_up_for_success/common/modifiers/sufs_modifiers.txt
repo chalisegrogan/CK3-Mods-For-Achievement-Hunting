@@ -1,0 +1,8 @@
+# Set Up for Success - Ruler Limit Modifier
+# Applied permanently via the "Set Up for Success" decision
+
+sufs_limits_modifier = {
+	domain_limit = 5
+	knight_limit = 5
+	vassal_limit = 50
+}

@@ -1,0 +1,77 @@
+# Set Up for Success - Main Decision
+# One-time-use per character. Available again on succession to a new ruler.
+
+sufs_boost_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+	desc = sufs_boost_decision_desc
+
+	is_shown = {
+		is_ai = no
+		NOT = { has_character_modifier = sufs_limits_modifier }
+	}
+
+	effect = {
+		# ── SKILLS (+20 all) ──────────────────────────────────────────
+		change_diplomacy = 20
+		change_martial = 20
+		change_stewardship = 20
+		change_intrigue = 20
+		change_learning = 20
+
+		# ── PERK POINTS (1500 XP per lifestyle tree, ~12+ unlocks) ───
+		add_diplomacy_lifestyle_xp = 1500
+		add_martial_lifestyle_xp = 1500
+		add_stewardship_lifestyle_xp = 1500
+		add_intrigue_lifestyle_xp = 1500
+		add_learning_lifestyle_xp = 1500
+
+		# ── TRAITS ───────────────────────────────────────────────────
+		add_trait = beauty_good_3		# Beautiful
+		add_trait = physique_good_3		# Herculean
+		add_trait = intellect_good_3	# Genius
+		add_trait = pure_blooded		# Pure-Blooded
+		add_trait = fecund				# Fecund (fertility)
+
+		# ── RESOURCES ────────────────────────────────────────────────
+		add_gold = 10000
+		add_legitimacy = 100
+
+		# ── DYNASTY RENOWN (enough for ~10+ legacy picks) ────────────
+		dynasty = {
+			add_dynasty_prestige = 15000
+		}
+
+		# ── RULER LIMITS (permanent modifier) ────────────────────────
+		add_character_modifier = sufs_limits_modifier
+
+		# ── SPOUSE (skills, perk XP, and traits) ─────────────────────
+		if = {
+			limit = { exists = spouse }
+			spouse = {
+				change_diplomacy = 20
+				change_martial = 20
+				change_stewardship = 20
+				change_intrigue = 20
+				change_learning = 20
+				add_diplomacy_lifestyle_xp = 1500
+				add_martial_lifestyle_xp = 1500
+				add_stewardship_lifestyle_xp = 1500
+				add_intrigue_lifestyle_xp = 1500
+				add_learning_lifestyle_xp = 1500
+				add_trait = beauty_good_3
+				add_trait = physique_good_3
+				add_trait = intellect_good_3
+				add_trait = pure_blooded
+				add_trait = fecund
+			}
+		}
+
+		# ── (re-use prevented by checking for sufs_limits_modifier above) ──
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}

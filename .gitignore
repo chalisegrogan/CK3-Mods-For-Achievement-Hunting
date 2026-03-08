@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Paradox launcher files are machine-specific (live in the CK3 mod folder, not here)
+# Each mod's descriptor.mod inside its folder IS tracked, only the outer .mod is excluded
+*.mod
+!*/descriptor.mod

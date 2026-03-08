@@ -1,0 +1,6 @@
+﻿l_english:
+ sufs_boost_decision:0 "Set Up for Success"
+ sufs_boost_decision_confirm:0 "Claim Your Destiny"
+ sufs_boost_decision_desc:0 "Claim your gifts as a ruler of destiny.\n\n#bold Ruler & Spouse:#!\n• +20 to all skills\n• Traits: [img=icon_trait_beauty_good_3]Beautiful, [img=icon_trait_physique_good_3]Herculean, [img=icon_trait_intellect_good_3]Genius, Pure-Blooded, Fecund\n• Lifestyle XP in all five trees\n\n#bold Ruler only:#!\n• +10,000 [icon_gold]Gold\n• +100 Legitimacy\n• +15,000 Dynasty Renown\n• +5 Domain Limit, +5 Knight Limit, +50 Vassal Limit\n• +5 Duchy Limit (hold up to 8 duchies before penalties)\n\nThis decision may be used once per character."
+ sufs_limits_modifier:0 "Set Up for Success"
+ sufs_limits_modifier_desc:0 "+5 Domain Limit, +5 Knight Limit, +50 Vassal Limit"
