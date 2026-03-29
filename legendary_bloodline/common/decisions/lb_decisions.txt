@@ -1,15 +1,15 @@
-# Set Up for Success - Main Decision
+# Legendary Bloodline - Main Decision
 # One-time-use per character. Available again on succession to a new ruler.
 
-sufs_boost_decision = {
+lb_awaken_ancestral_blood = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
 	}
-	desc = sufs_boost_decision_desc
+	desc = lb_awaken_ancestral_blood_desc
 
 	is_shown = {
 		is_ai = no
-		NOT = { has_character_modifier = sufs_limits_modifier }
+		NOT = { has_character_modifier = lb_limits_modifier }
 	}
 
 	effect = {
@@ -44,7 +44,7 @@ sufs_boost_decision = {
 		}
 
 		# ── RULER LIMITS (permanent modifier) ────────────────────────
-		add_character_modifier = sufs_limits_modifier
+		add_character_modifier = lb_limits_modifier
 
 		# ── SPOUSE (skills, perk XP, and traits) ─────────────────────
 		if = {
@@ -68,7 +68,7 @@ sufs_boost_decision = {
 			}
 		}
 
-		# ── (re-use prevented by checking for sufs_limits_modifier above) ──
+		# ── (re-use prevented by checking for lb_limits_modifier above) ──
 	}
 
 	ai_will_do = {

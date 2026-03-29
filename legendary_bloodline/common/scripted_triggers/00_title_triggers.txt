@@ -103,7 +103,7 @@ has_mythical_founder_trigger = {
 has_too_many_held_duchies_trigger = {
 	highest_held_title_tier >= tier_kingdom
 	any_held_title = {
-		count >= 8	# SUFS: raised from 3 to 8 (+5 duchy limit)
+		count >= 8	# LB: raised from 3 to 8 (+5 duchy limit)
 		title_counts_towards_too_many_duchies_trigger = yes
 	}
 }

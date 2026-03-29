@@ -4,9 +4,9 @@ Personal Crusader Kings III mods for achievement hunting.
 
 ## Mods
 
-### [Set Up for Success](set_up_for_success/)
+### [Legendary Bloodline](legendary_bloodline/)
 
-A quality-of-life boost mod for time-saving. Adds a one-time Decision that gives your starting ruler (and their spouse) a significant head start without using debug mode or console commands.
+A quality-of-life boost mod for time-saving. Adds a one-time Decision ("Awaken the Ancestral Blood") that gives your starting ruler (and their spouse) a significant head start without using debug mode or console commands.
 
 **What the decision gives you:**
 
@@ -37,18 +37,18 @@ Spouse gets: all skills, all traits, and all lifestyle XP.
 ck3-mods/
 ├── README.md
 ├── .gitignore
-└── set_up_for_success/          # SUFS Mod
+└── legendary_bloodline/         # LB Mod
     ├── descriptor.mod
     ├── common/
     │   ├── decisions/
-    │   │   └── sufs_decisions.txt
+    │   │   └── lb_decisions.txt
     │   ├── modifiers/
-    │   │   └── sufs_modifiers.txt
+    │   │   └── lb_modifiers.txt
     │   └── scripted_triggers/
     │       └── 00_title_triggers.txt   # overrides duchy limit globally
     └── localization/
         └── english/
-            └── sufs_l_english.yml
+            └── lb_l_english.yml
 ```
 
 The outer `<mod_name>.mod` launcher file is **not tracked** (it contains an absolute path specific to the local machine). See Installation below.
@@ -66,15 +66,15 @@ The outer `<mod_name>.mod` launcher file is **not tracked** (it contains an abso
    - **macOS:** `~/Documents/Paradox Interactive/Crusader Kings III/mod/`
    - **Windows:** `%USERPROFILE%\Documents\Paradox Interactive\Crusader Kings III\mod\`
 
-3. Create `set_up_for_success.mod` in that folder with:
+3. Create `legendary_bloodline.mod` in that folder with:
    ```
-   name="Set Up for Success"
+   name="Legendary Bloodline"
    version="1.0.0"
    tags={
        "Gameplay"
    }
    supported_version="*.*.*"
-   path="/absolute/path/to/ck3-mods/set_up_for_success"
+   path="/absolute/path/to/ck3-mods/legendary_bloodline"
    ```
    Replace `path=` with the actual absolute path to the mod folder in your clone.
 
@@ -82,8 +82,8 @@ The outer `<mod_name>.mod` launcher file is **not tracked** (it contains an abso
 
 **Tip:** You can symlink the mod folder into the CK3 mod directory instead of copying it, so edits are live immediately:
 ```bash
-ln -s /path/to/ck3-mods/set_up_for_success \
-  ~/Documents/Paradox\ Interactive/Crusader\ Kings\ III/mod/set_up_for_success
+ln -s /path/to/ck3-mods/legendary_bloodline \
+  ~/Documents/Paradox\ Interactive/Crusader\ Kings\ III/mod/legendary_bloodline
 ```
 
 ---
